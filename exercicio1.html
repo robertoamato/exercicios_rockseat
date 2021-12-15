@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniel" />
+    <meta name="description" content="descrição bacanuda" />
+    <meta name="keywords" content="html5, tecnologia" />
+  </head>
+
+  <body>
+
+    <form action="">
+
+    <input 
+    
+    type="password" 
+    minlength="4"
+    maxlength="8"
+    size="8" 
+    placeholder="digite a sua senha"
+        
+    >
+    <button type="submit">enviar</button>
+   </form><br>
+
+   <form action="">
+
+    <input 
+    
+    type="password"
+    pattern="[0-9a-fA-F] {4,8}"
+    title="Coloque Hex no minimo 4 caracteres e no maximo 8 caracteres"
+    placeholder="digite a senha"   
+    
+    >
+    <button type="submit">submeter </button><br><br>
+      
+    <form action="">
+      <datalist id="listadeemais">
+        <option value="robertoamatoz@gmail.com"></option>
+      </datalist>
+     
+      <input type="email" value=""
+      pattern="robertoamatoz@gmail.com"
+      title="somente emails cadastrados"
+      list="listadeemais"
+      >
+      <button type="submit">enviar</button>
+
+    </form>
+    --aula url
+
+    <datalist id="listadeurls">
+      <option value="http://www.pinto.com"></option>
+      <option value="https://www.rolanocu.com.br"></option>
+
+
+
+
+    </datalist>
+
+
+    <form action="">
+      <input type="url"
+      pattern="somente url cadastadas"
+      placeholder="digite a url desejada"
+      title="somente urls cadastradas"
+      list="listadeurls"
+
+      
+      
+      >
+      <button type="submit">enviar</button>
+
+
+
+
+    </form>
+
+    ---aula input file
+
+   <form action="" method="post" enctype="multipart/form-data">
+    <input type="file" accept="multiple"></input>
+
+
+
+
+   </form>
+   <datalist id="colorsdata">
+<option value="#0000ff"></option>
+
+----aula input color
+   </datalist>
+   <input type="color" list="colorsdata"></input>
+
+<fieldset>
+  <legend>escolha o seu interesse</legend>
+  <div>
+    <input type="checkbox" id="coding" name="interesse" value="coding" checked>
+    <label for="coding">Coding</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="music" name="interesse" value="music">
+    <label for="music">Music</label>
+  </div>
+</fieldset>
+
+<fieldset>
+<legend> bora tomar um cafe</legend>
+<label for="yep">sim</label>
+<input type="radio" id="yep" name="coffee" value="yes">
+
+<label for="nono">nao</label>
+<input checked type="radio" id="nono" name="coffee">
+</fieldset>
+
+<textarea maxlength="4"  minlength="4" wrap="off" ></textarea>
+
+
+<label for="carselect" ></label>
+<select name="carmodel" id="carselect" multiple size="4">
+ <option value="">selecione o modelo do carro</option> 
+<option value="fiat">uno</option>
+<option value="audi">a3</option>
+<option value="bmw">x6</option>
+ </select>
+
+<datalist id="pesquisar">
+ 
+<option >rola</option>
+<option >cu</option>
+<option >buceta</option>
+</datalist>
+
+
+<form action="">
+
+<input type="search" name="q" list="pesquisar" 
+placeholder="digite seu termo de busca"
+size="25"
+aria-label="">
+<button>pesquisa</button>
+</form>
+
+<form action="">
+
+<label for="">pesquisar pelo id</label>
+<input type="search" name="id"
+size="5"
+pattern="[0-9] {2}"
+title="digite o numero do id:99">
+<button>pesquisar</button><br>
+
+<input type="number"
+placeholder="input number"
+step="100">
+<button>pesquisar</button>
+</form>
+
+<input type="range" min="-10"
+max="10"
+step="5">  
+
+<input type="date">
+<input type="month">
+<input type="time">
+<input type="week">
+
+<form action="">
+<fieldset>
+<legend>teste</legend>
+
+
+</fieldset>
+</form>
+
+<form action="">
+ <fieldset>
+ <legend>Contato</legend>
+
+<label for="name">nome</label><br> 
+<input id="name" type="text" name="name" placeholder="Escreva o seu nome aqui"><br>
+
+<label for="email">email</label><br>
+<input id="email" type="email" name="email" placeholder="por favor digite o seu email"><br>
+
+<label for="mensagem">mensagem</label><br>
+<textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br>
+
+<button>enviar</button>
+</fieldset>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+ 
+
+  </body>
+</html>
